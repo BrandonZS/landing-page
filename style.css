@@ -1,0 +1,9 @@
+.header{
+    border: red 5px solid;
+}
+.info{
+    border: blue 5px solid;
+}
+.footer{
+    border: green 5px solid;
+}
