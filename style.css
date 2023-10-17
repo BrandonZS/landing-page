@@ -47,7 +47,6 @@ button{
     display: flex;
     justify-content: space-between;
 }
-.info.quote,
 .info.reclut{
     border: blue 5px solid;
 }
@@ -97,7 +96,7 @@ button{
 .card{
     display: flex;
     justify-content: space-around;
-    gap: 25px;
+    gap: 50px;
 }
 .card img{
     width: 200px;
@@ -112,4 +111,17 @@ button{
     align-content: center;
     justify-content: center;
     max-width: 200px;
+}
+.info.quote{
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info.quote.text{
+    max-width: 400px;
+    padding: 25px;
+}
+.info.quote.text p{
+    padding: 0px;
 }
