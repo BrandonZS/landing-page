@@ -7,3 +7,18 @@
 .footer{
     border: green 5px solid;
 }
+img{
+    max-width: 500px;
+    max-height: auto;
+}
+
+
+
+#logo{
+    width: 100px;
+    height: auto;
+}
+.header,
+.footer{
+    background-color: #1F2937;
+}
