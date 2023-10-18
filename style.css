@@ -2,7 +2,7 @@
 body{
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 img{
@@ -15,16 +15,23 @@ li{
 }
 ul{
     display: flex;
-    padding: 0px;
+    padding-right: 25px;
+    max-width: 450px;
     justify-content: space-around;
-    gap: 15px;
+    gap: 5px;
 }
 a{
     text-decoration-line: none;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 600;
     color: #E5E7EB;
 }
+div.box p{
+    margin: 0px;
+}
 h2{
+    margin: 0px;
+    
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
@@ -33,6 +40,11 @@ h3{
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
+}
+h4{
+    font-size: 18px;
+    font-weight:700;
+    margin: 0px;
 }
 button{
     padding-left: 12px;
@@ -49,7 +61,8 @@ button{
 
 .headertop{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .header,
 .footer{
@@ -57,15 +70,31 @@ button{
 }
 .container{
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.header{
+    display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 100px;
+    
+}
+.header-container,
+.header-container-photo{
+    max-width: 500px;
+    max-height: 245px;
+}
+.paragraph-one{
+    padding: 5px;
 }
 /*id*/
 
 #logo{
-    width: 150px;
-    height: auto;
-    padding: 12px;
+   
+    height: 45px;
+    width: 100px;
+    padding-top: 12px;
 }
 .paragraph-one{
     font-size: 18px;
@@ -75,13 +104,14 @@ button{
     display: flex;
     flex-direction: column;
     align-items:flex-start;
-    max-width: 500px;
-    padding-left: 100px;
-    padding-bottom: 15px ;
+    max-width: 450px;
+    padding-left: 0px;
+    padding-bottom: 50px ;
 }
 .header-container-photo{
     display: flex;
     padding: 25px;
+    padding-bottom: 50px;
     
 }
 .info.images{
@@ -94,6 +124,7 @@ button{
     display: flex;
     justify-content: space-around;
     gap: 50px;
+    padding-bottom: 125px;
 }
 .card img{
     width: 200px;
@@ -111,6 +142,8 @@ button{
 }
 .info.quote{
     background-color: #E5E7EB;
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,17 +158,20 @@ button{
 .info.reclut{
     background-color: #ffffff;
     display: flex;
-
+    padding: 50px;
     justify-content: space-around;
 }
 .info.reclut button{
     border: #ffffff 2px solid;
 }
-.info.reclut.container{
+.info.reclut.box{
+    display: flex;
     background-color: #3882F6;
     padding: 25px;
     margin: 20px;
     color: #ffffff;
+    min-width: 50%;
+    border-radius: 10px;
 }
 .footer p{
     display: flex;
@@ -144,4 +180,10 @@ button{
     color: #ffffff;
     padding: 12px;
     text-align: center;
+}
+#info-text{
+    text-align: left;
+}
+#info-button{
+    align-self: center;
 }
